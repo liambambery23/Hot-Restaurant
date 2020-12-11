@@ -16,19 +16,18 @@
 
     <div class="container">
         <div class="jumbotron">
-            <h1>Hot Restaurants!</h1>
-            <h3>Current Reservations and Waiting List</h3>
-            <hr>
-            <button class="btn btn-danger btn-lg"></span> MakeReservation</button></a>
+            <h1 class="text-center">Hot Restaurants!</h1>
+            <h3 class="text-center">Current Reservations and Waiting List</h3>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-md" id="add-btn">
-                    Home</button>
+                <a href="/reserve">
+                    <button type="button" class="btn btn-danger btn-lg"> MakeReservation</button></a>
+                <a href="\">
+                    <button type="button" class="btn btn-primary btn-sm">Home</button></a>
             </div>
         </div>
+
         <div class="row">
-
-            <div class="col-12">
-
+            <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
                         <h4><strong>Current Reservations</strong></h4>
@@ -36,27 +35,33 @@
                     <div class="card-body">
                         <form method="POST" role="form">
 
-
                         </form>
-
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h4><strong>Waiting List</strong></h4>
-                        </div>
-                        <div class="card-body">
-                            <form method="POST" role="form">
-
-                            </form>
-                        </div>
-
                     </div>
                 </div>
+
+
+                <div class="card">
+                    <div class="card-header">
+                        <h4><strong>Waiting List</strong></h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" role="form">
+
+                        </form>
+                    </div>
+                </div>
+
             </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
+            </div>
+        </footer>
 
-            <script type="text/javascript">
+        <script type="text/javascript">
 
-            </script>
+        </script>
 
 </body>
 
