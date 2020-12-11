@@ -13,7 +13,7 @@ app.use(express.json());
 /////--------------------------
 
 app.get("/", function (request, response) {
-    response.sendFile(path.join(__dirname, "index.html"));
+    response.sendFile(path.join(__dirname, "homepage.html"));
 });
 
 app.get("/make-reservation", function (request, response) {
